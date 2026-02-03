@@ -25,7 +25,7 @@ This package includes both the font files and a custom keyboard layout to facili
 2.  Copy the file `Atlanton-Keyboard-Apple.keylayout` to one of the following folders:
     * `/Library/Keyboard Layouts` (for all users)
     * `~/Library/Keyboard Layouts` (for just yourself)
-3.  Log out and log back in to your account.
+3.  Tip: In order to access the hidden Library folder from Finder, hold down the option key while clicking on the Go menu.
 4.  Open **System Settings** > **Keyboard**.
 5.  Under "Text Input" or "Input Sources," click **Edit** or the **+** button.
 6.  Scroll down to **Others**, select **Atlanton**, and click **Add**.
@@ -50,4 +50,5 @@ Three explanatory files are included:
 * **Documentation:** Licensed under CC BY 4.0.
 
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+
 
