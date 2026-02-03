@@ -14,14 +14,14 @@ This package includes both the font files and a custom keyboard layout to facili
 ### Step 2:
 
 **For Windows Users**
-1.  Navigate to the **Keyboard** folder inside the Atlanton directory.
+1.  Open the **Keyboard** folder.
 2.  Open and run the installer `Atlanton-Keyboard-Windows.exe`.
 3.  Follow the prompts to complete the installation.
-4.  Restart your computer to ensure the changes take effect.
-5.  Select "Atlanton" from your language bar (usually by pressing `Win` + `Space`).
+4.  Restart your computer to ensure that the changes take effect.
+5.  Select "Atlanton" from the language bar (usually by pressing `Win` + `Space`).
 
 **For Apple (macOS) Users**
-1.  Navigate to the **Keyboard** folder inside the Atlanton directory.
+1.  Open the **Keyboard** folder.
 2.  Copy the file `Atlanton-Keyboard-Apple.keylayout` to one of the following folders:
     * `/Library/Keyboard Layouts` (for all users)
     * `~/Library/Keyboard Layouts` (for just yourself)
@@ -41,8 +41,8 @@ Three explanatory files are included:
     An overview of the various keys and key-combinations of the keyboard layout.
 
 * **AIS-manual.pdf** (in the main Atlanton folder)
-    A guide, in Italian, to writing the phonetic alphabet of the *Atlante Italo-Svizzero* using the Atlanton font and keyboard layout.
-
+    A guide, in Italian, to writing the phonetic alphabet of the *Atlante Italo-Svizzero* using Atlanton.
+  
 ## License
 
 * **Font Software:** Licensed under the SIL Open Font License (OFL), Version 1.1.
@@ -50,5 +50,6 @@ Three explanatory files are included:
 * **Documentation:** Licensed under CC BY 4.0.
 
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+
 
 
