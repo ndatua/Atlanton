@@ -1,0 +1,1213 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<!--Last edited by KbdEdit version 25.12.0 3563-3755 on 2026-02-03 at 08:04 (GMT+0)-->
+<keyboard group="126" id="-20043" maxout="1" name="Atlanton 1.00">
+	<layouts>
+		<layout first="0" last="0" mapSet="16c" modifiers="f4"/>
+	</layouts>
+	<modifierMap id="f4" defaultIndex="0">
+		<keyMapSelect mapIndex="0">
+			<modifier keys=""/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="1">
+			<modifier keys="caps"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="2">
+			<modifier keys="anyShift"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="3">
+			<modifier keys="caps anyShift"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="4">
+			<modifier keys="anyControl"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="5">
+			<modifier keys="anyOption"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="6">
+			<modifier keys="anyOption caps"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="7">
+			<modifier keys="anyOption anyShift"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="8">
+			<modifier keys="anyOption caps anyShift"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="9">
+			<modifier keys="anyControl anyShift"/>
+		</keyMapSelect>
+	</modifierMap>
+	<keyMapSet id="16c">
+		<keyMap index="0">
+			<key code="0" action="a"/>
+			<key code="1" action="s"/>
+			<key code="2" action="d"/>
+			<key code="3" action="f"/>
+			<key code="4" action="h"/>
+			<key code="5" action="g"/>
+			<key code="6" action="z"/>
+			<key code="7" action="x"/>
+			<key code="8" action="c"/>
+			<key code="9" action="v"/>
+			<key code="10" output="&#x003C;"/>
+			<key code="11" action="b"/>
+			<key code="12" action="q"/>
+			<key code="13" action="w"/>
+			<key code="14" action="e"/>
+			<key code="15" action="r"/>
+			<key code="16" action="y"/>
+			<key code="17" action="t"/>
+			<key code="18" output="1"/>
+			<key code="19" output="2"/>
+			<key code="20" output="3"/>
+			<key code="21" output="4"/>
+			<key code="22" output="6"/>
+			<key code="23" output="5"/>
+			<key code="24" output="`"/>
+			<key code="25" output="9"/>
+			<key code="26" output="7"/>
+			<key code="27" output="'"/>
+			<key code="28" output="8"/>
+			<key code="29" output="0"/>
+			<key code="30" output="+"/>
+			<key code="31" action="o"/>
+			<key code="32" action="u"/>
+			<key code="33" output="~"/>
+			<key code="34" action="i"/>
+			<key code="35" action="p"/>
+			<key code="36" output="&#x000D;"/>
+			<key code="37" action="l"/>
+			<key code="38" action="j"/>
+			<key code="39" action="Entering Latin Small Letter A With Grave"/>
+			<key code="40" action="k"/>
+			<key code="41" action="Entering Latin Small Letter O With Grave"/>
+			<key code="42" action="Entering Latin Small Letter U With Grave"/>
+			<key code="43" output=","/>
+			<key code="44" output="-"/>
+			<key code="45" action="n"/>
+			<key code="46" action="m"/>
+			<key code="47" output="."/>
+			<key code="48" output="&#x0009;"/>
+			<key code="49" output=" "/>
+			<key code="50" output="\"/>
+			<key code="51" output="&#x0008;"/>
+			<key code="53" output="&#x001B;"/>
+			<key code="65" output="."/>
+			<key code="67" output="*"/>
+			<key code="69" output="+"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="75" output="/"/>
+			<key code="76" output="&#x000D;"/>
+			<key code="78" output="-"/>
+			<key code="81" output="="/>
+			<key code="82" output="0"/>
+			<key code="83" output="1"/>
+			<key code="84" output="2"/>
+			<key code="85" output="3"/>
+			<key code="86" output="4"/>
+			<key code="87" output="5"/>
+			<key code="88" output="6"/>
+			<key code="89" output="7"/>
+			<key code="91" output="8"/>
+			<key code="92" output="9"/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="1">
+			<key code="0" action="α"/>
+			<key code="1" action="σ"/>
+			<key code="2" action="δ"/>
+			<key code="3" action="φ"/>
+			<key code="4" action="η"/>
+			<key code="5" action="γ"/>
+			<key code="6" action="ζ"/>
+			<key code="7" action="χ"/>
+			<key code="8" action="ψ"/>
+			<key code="9" action="ω"/>
+			<key code="10" output="&#x003C;"/>
+			<key code="11" action="β"/>
+			<key code="12" output="᪻"/>
+			<key code="13" action="ς"/>
+			<key code="14" action="ε"/>
+			<key code="15" action="ρ"/>
+			<key code="16" action="υ"/>
+			<key code="17" action="τ"/>
+			<key code="18" output="̃"/>
+			<key code="19" output="̆"/>
+			<key code="20" output="̑"/>
+			<key code="21" output="͡"/>
+			<key code="22" output="̄"/>
+			<key code="23" output="̌"/>
+			<key code="24" output="̂"/>
+			<key code="25" output="̊"/>
+			<key code="26" output="̍"/>
+			<key code="27" output=""/>
+			<key code="28" output="̓"/>
+			<key code="29" output="̇"/>
+			<key code="30" output="́"/>
+			<key code="31" action="ο"/>
+			<key code="32" action="θ"/>
+			<key code="33" output="̀"/>
+			<key code="34" action="ι"/>
+			<key code="35" action="π"/>
+			<key code="36" output="&#x000D;"/>
+			<key code="37" action="λ"/>
+			<key code="38" action="ξ"/>
+			<key code="39" action="Entering Latin Small Letter A With Grave"/>
+			<key code="40" action="κ"/>
+			<key code="41" action="Entering Latin Small Letter O With Grave"/>
+			<key code="42" action="Entering Latin Small Letter U With Grave"/>
+			<key code="45" action="ν"/>
+			<key code="46" action="μ"/>
+			<key code="48" output="&#x0009;"/>
+			<key code="49" output=" "/>
+			<key code="50" output="᷑"/>
+			<key code="51" output="&#x0008;"/>
+			<key code="53" output="&#x001B;"/>
+			<key code="65" output="."/>
+			<key code="67" output="*"/>
+			<key code="69" output="+"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="75" output="/"/>
+			<key code="76" output="&#x000D;"/>
+			<key code="78" output="-"/>
+			<key code="81" output="="/>
+			<key code="82" output="0"/>
+			<key code="83" output="1"/>
+			<key code="84" output="2"/>
+			<key code="85" output="3"/>
+			<key code="86" output="4"/>
+			<key code="87" output="5"/>
+			<key code="88" output="6"/>
+			<key code="89" output="7"/>
+			<key code="91" output="8"/>
+			<key code="92" output="9"/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="2">
+			<key code="0" output="A"/>
+			<key code="1" output="S"/>
+			<key code="2" output="D"/>
+			<key code="3" output="F"/>
+			<key code="4" output="H"/>
+			<key code="5" output="G"/>
+			<key code="6" output="Z"/>
+			<key code="7" output="X"/>
+			<key code="8" output="C"/>
+			<key code="9" output="V"/>
+			<key code="10" output="&#x003E;"/>
+			<key code="11" output="B"/>
+			<key code="12" output="Q"/>
+			<key code="13" output="W"/>
+			<key code="14" output="E"/>
+			<key code="15" output="R"/>
+			<key code="16" output="Y"/>
+			<key code="17" output="T"/>
+			<key code="18" output="!"/>
+			<key code="19" output='"'/>
+			<key code="20" output="£"/>
+			<key code="21" output="$"/>
+			<key code="22" output="&#x0026;"/>
+			<key code="23" output="%"/>
+			<key code="24" output="^"/>
+			<key code="25" output=")"/>
+			<key code="26" output="/"/>
+			<key code="27" output="?"/>
+			<key code="28" output="("/>
+			<key code="29" output="="/>
+			<key code="30" output="*"/>
+			<key code="31" output="O"/>
+			<key code="32" output="U"/>
+			<key code="34" output="I"/>
+			<key code="35" output="P"/>
+			<key code="36" output="&#x000D;"/>
+			<key code="37" output="L"/>
+			<key code="38" output="J"/>
+			<key code="39" output="°"/>
+			<key code="40" output="K"/>
+			<key code="41" output="ç"/>
+			<key code="42" output="§"/>
+			<key code="43" output=";"/>
+			<key code="44" output="_"/>
+			<key code="45" output="N"/>
+			<key code="46" output="M"/>
+			<key code="47" output=":"/>
+			<key code="48" output="&#x0009;"/>
+			<key code="49" output=" "/>
+			<key code="50" output="|"/>
+			<key code="51" output="&#x0008;"/>
+			<key code="53" output="&#x001B;"/>
+			<key code="65" output="."/>
+			<key code="67" output="*"/>
+			<key code="69" output="+"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="75" output="/"/>
+			<key code="76" output="&#x000D;"/>
+			<key code="78" output="-"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="3">
+			<key code="0" output="Α"/>
+			<key code="1" output="Σ"/>
+			<key code="2" output="Δ"/>
+			<key code="3" output="Φ"/>
+			<key code="4" output="Η"/>
+			<key code="5" output="Γ"/>
+			<key code="6" output="Ζ"/>
+			<key code="7" output="Χ"/>
+			<key code="8" output="Ψ"/>
+			<key code="9" output="Ω"/>
+			<key code="10" output="&#x003E;"/>
+			<key code="11" output="Β"/>
+			<key code="12" output="᪽"/>
+			<key code="13" output="Σ"/>
+			<key code="14" output="Ε"/>
+			<key code="15" output="Ρ"/>
+			<key code="16" output="Υ"/>
+			<key code="17" output="Τ"/>
+			<key code="18" output="̰"/>
+			<key code="19" output="̮"/>
+			<key code="20" output="̯"/>
+			<key code="21" output="͜"/>
+			<key code="22" output="̱"/>
+			<key code="23" output="̬"/>
+			<key code="25" output="̥"/>
+			<key code="26" output="̩"/>
+			<key code="27" output="᪷"/>
+			<key code="28" output="̦"/>
+			<key code="29" output="̣"/>
+			<key code="30" output="̟"/>
+			<key code="31" output="Ο"/>
+			<key code="32" output="Θ"/>
+			<key code="34" output="Ι"/>
+			<key code="35" output="Π"/>
+			<key code="36" output="&#x000D;"/>
+			<key code="37" output="Λ"/>
+			<key code="38" output="Ξ"/>
+			<key code="39" output="°"/>
+			<key code="40" output="Κ"/>
+			<key code="41" output="ç"/>
+			<key code="42" output="§"/>
+			<key code="45" output="Ν"/>
+			<key code="46" output="Μ"/>
+			<key code="48" output="&#x0009;"/>
+			<key code="49" output=" "/>
+			<key code="50" output="᪶"/>
+			<key code="51" output="&#x0008;"/>
+			<key code="53" output="&#x001B;"/>
+			<key code="65" output="."/>
+			<key code="67" output="*"/>
+			<key code="69" output="+"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="75" output="/"/>
+			<key code="76" output="&#x000D;"/>
+			<key code="78" output="-"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="4">
+			<key code="10" output="&#x001C;"/>
+			<key code="30" output="&#x001D;"/>
+			<key code="33" output="&#x001B;"/>
+			<key code="36" output="&#x000A;"/>
+			<key code="42" output="&#x001C;"/>
+			<key code="44" output="&#x001F;"/>
+			<key code="49" output=" "/>
+			<key code="51" output="&#x007F;"/>
+			<key code="53" output="&#x001B;"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="76" output="&#x000A;"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="5">
+			<key code="0" action="ɐ"/>
+			<key code="1" action="ʃ"/>
+			<key code="4" action="ɦ"/>
+			<key code="6" action="ʒ"/>
+			<key code="12" action="ꭋ"/>
+			<key code="13" action=""/>
+			<key code="14" action="ə"/>
+			<key code="15" action="ɹ"/>
+			<key code="16" action="ꭒ"/>
+			<key code="17" action="ʁ"/>
+			<key code="23" output="€"/>
+			<key code="24" output="┼"/>
+			<key code="25" output="˟"/>
+			<key code="27" output="┬"/>
+			<key code="29" output="┴"/>
+			<key code="30" output="]"/>
+			<key code="31" action=""/>
+			<key code="32" action=""/>
+			<key code="33" output="["/>
+			<key code="34" action="ᴉ"/>
+			<key code="35" action="œ"/>
+			<key code="39" output="#"/>
+			<key code="41" output="@"/>
+			<key code="43" output="«"/>
+			<key code="44" output="→"/>
+			<key code="45" action="ŋ"/>
+			<key code="46" action="ɱ"/>
+			<key code="47" output="»"/>
+			<key code="50" output="/"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="6">
+			<key code="0" action="ɐ"/>
+			<key code="1" action=""/>
+			<key code="2" action="đ"/>
+			<key code="3" action=""/>
+			<key code="4" action="ɦ"/>
+			<key code="5" action="ǥ"/>
+			<key code="6" action="ʒ"/>
+			<key code="7" action=""/>
+			<key code="8" action="ꞓ"/>
+			<key code="9" action=""/>
+			<key code="11" action="ƀ"/>
+			<key code="12" action="ꭋ"/>
+			<key code="13" action=""/>
+			<key code="14" action="ə"/>
+			<key code="15" action="ɹ"/>
+			<key code="16" action="ƛ"/>
+			<key code="17" action="ŧ"/>
+			<key code="23" output="€"/>
+			<key code="24" output="┼"/>
+			<key code="25" output="˟"/>
+			<key code="27" action="ʔ"/>
+			<key code="29" output="┴"/>
+			<key code="30" output="}"/>
+			<key code="31" action="ø"/>
+			<key code="32" action=""/>
+			<key code="33" output="{"/>
+			<key code="34" action="ᴉ"/>
+			<key code="35" action="œ"/>
+			<key code="37" action="ł"/>
+			<key code="39" output="#"/>
+			<key code="40" action=""/>
+			<key code="41" action="ƚ"/>
+			<key code="43" output="‹"/>
+			<key code="44" output="→"/>
+			<key code="45" action=""/>
+			<key code="46" action="ɱ"/>
+			<key code="47" output="›"/>
+			<key code="50" output="/"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="7">
+			<key code="1" action=""/>
+			<key code="2" action="đ"/>
+			<key code="3" action=""/>
+			<key code="5" action="ǥ"/>
+			<key code="7" action=""/>
+			<key code="8" action="ꞓ"/>
+			<key code="9" action=""/>
+			<key code="11" action="ƀ"/>
+			<key code="16" action="ƛ"/>
+			<key code="17" action="ŧ"/>
+			<key code="27" action="ʔ"/>
+			<key code="30" output="}"/>
+			<key code="31" action="ø"/>
+			<key code="33" output="{"/>
+			<key code="37" action="ł"/>
+			<key code="40" action=""/>
+			<key code="41" action="ƚ"/>
+			<key code="43" output="‹"/>
+			<key code="45" action=""/>
+			<key code="47" output="›"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="8">
+			<key code="1" action="ʃ"/>
+			<key code="16" action="ꭒ"/>
+			<key code="17" action="ʁ"/>
+			<key code="27" output="┬"/>
+			<key code="30" output="]"/>
+			<key code="31" action=""/>
+			<key code="33" output="["/>
+			<key code="41" output="@"/>
+			<key code="43" output="«"/>
+			<key code="45" action="ŋ"/>
+			<key code="47" output="»"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+		<keyMap index="9">
+			<key code="22" output="&#x001E;"/>
+			<key code="71" output="&#x001B;"/>
+			<key code="81" output="="/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="121" output="&#x000C;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="124" output="&#x001D;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="126" output="&#x001E;"/>
+		</keyMap>
+	</keyMapSet>
+	<actions>
+		<action id="Entering Latin Small Letter A With Grave">
+			<when state="none" next="Latin Small Letter A With Grave"/>
+		</action>
+		<action id="Entering Latin Small Letter O With Grave">
+			<when state="none" next="Latin Small Letter O With Grave"/>
+		</action>
+		<action id="Entering Latin Small Letter U With Grave">
+			<when state="none" next="Latin Small Letter U With Grave"/>
+		</action>
+		<action id="a">
+			<when state="none" output="a"/>
+			<when state="Latin Small Letter A With Grave" output="ₐ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵃ"/>
+			<when state="Latin Small Letter U With Grave" output="ͣ"/>
+		</action>
+		<action id="b">
+			<when state="none" output="b"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵇ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷨ"/>
+		</action>
+		<action id="c">
+			<when state="none" output="c"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶜ"/>
+			<when state="Latin Small Letter U With Grave" output="ͨ"/>
+		</action>
+		<action id="d">
+			<when state="none" output="d"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵈ"/>
+			<when state="Latin Small Letter U With Grave" output="ͩ"/>
+		</action>
+		<action id="e">
+			<when state="none" output="e"/>
+			<when state="Latin Small Letter A With Grave" output="ₑ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵉ"/>
+			<when state="Latin Small Letter U With Grave" output="ͤ"/>
+		</action>
+		<action id="f">
+			<when state="none" output="f"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶠ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷫ"/>
+		</action>
+		<action id="g">
+			<when state="none" output="g"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵍ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷚ"/>
+		</action>
+		<action id="h">
+			<when state="none" output="h"/>
+			<when state="Latin Small Letter A With Grave" output="ₕ"/>
+			<when state="Latin Small Letter O With Grave" output="ʰ"/>
+			<when state="Latin Small Letter U With Grave" output="ͪ"/>
+		</action>
+		<action id="i">
+			<when state="none" output="i"/>
+			<when state="Latin Small Letter A With Grave" output="ᵢ"/>
+			<when state="Latin Small Letter O With Grave" output="ⁱ"/>
+			<when state="Latin Small Letter U With Grave" output="ͥ"/>
+		</action>
+		<action id="j">
+			<when state="none" output="j"/>
+			<when state="Latin Small Letter A With Grave" output="ⱼ"/>
+			<when state="Latin Small Letter O With Grave" output="ʲ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="k">
+			<when state="none" output="k"/>
+			<when state="Latin Small Letter A With Grave" output="ₖ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵏ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷜ"/>
+		</action>
+		<action id="l">
+			<when state="none" output="l"/>
+			<when state="Latin Small Letter A With Grave" output="ₗ"/>
+			<when state="Latin Small Letter O With Grave" output="ˡ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷝ"/>
+		</action>
+		<action id="m">
+			<when state="none" output="m"/>
+			<when state="Latin Small Letter A With Grave" output="ₘ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵐ"/>
+			<when state="Latin Small Letter U With Grave" output="ͫ"/>
+		</action>
+		<action id="n">
+			<when state="none" output="n"/>
+			<when state="Latin Small Letter A With Grave" output="ₙ"/>
+			<when state="Latin Small Letter O With Grave" output="ⁿ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷠ"/>
+		</action>
+		<action id="o">
+			<when state="none" output="o"/>
+			<when state="Latin Small Letter A With Grave" output="ₒ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵒ"/>
+			<when state="Latin Small Letter U With Grave" output="ͦ"/>
+		</action>
+		<action id="p">
+			<when state="none" output="p"/>
+			<when state="Latin Small Letter A With Grave" output="ₚ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵖ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷮ"/>
+		</action>
+		<action id="q">
+			<when state="none" output="q"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="r">
+			<when state="none" output="r"/>
+			<when state="Latin Small Letter A With Grave" output="ᵣ"/>
+			<when state="Latin Small Letter O With Grave" output="ʳ"/>
+			<when state="Latin Small Letter U With Grave" output="ͬ"/>
+		</action>
+		<action id="s">
+			<when state="none" output="s"/>
+			<when state="Latin Small Letter A With Grave" output="ₛ"/>
+			<when state="Latin Small Letter O With Grave" output="ˢ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷤ"/>
+		</action>
+		<action id="t">
+			<when state="none" output="t"/>
+			<when state="Latin Small Letter A With Grave" output="ₜ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵗ"/>
+			<when state="Latin Small Letter U With Grave" output="ͭ"/>
+		</action>
+		<action id="u">
+			<when state="none" output="u"/>
+			<when state="Latin Small Letter A With Grave" output="ᵤ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵘ"/>
+			<when state="Latin Small Letter U With Grave" output="ͧ"/>
+		</action>
+		<action id="v">
+			<when state="none" output="v"/>
+			<when state="Latin Small Letter A With Grave" output="ᵥ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵛ"/>
+			<when state="Latin Small Letter U With Grave" output="ͮ"/>
+		</action>
+		<action id="w">
+			<when state="none" output="w"/>
+			<when state="Latin Small Letter A With Grave" output="₝"/>
+			<when state="Latin Small Letter O With Grave" output="ʷ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷱ"/>
+		</action>
+		<action id="x">
+			<when state="none" output="x"/>
+			<when state="Latin Small Letter A With Grave" output="ₓ"/>
+			<when state="Latin Small Letter O With Grave" output="ˣ"/>
+			<when state="Latin Small Letter U With Grave" output="ͯ"/>
+		</action>
+		<action id="y">
+			<when state="none" output="y"/>
+			<when state="Latin Small Letter A With Grave" output="₞"/>
+			<when state="Latin Small Letter O With Grave" output="ʸ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="z">
+			<when state="none" output="z"/>
+			<when state="Latin Small Letter A With Grave" output="₟"/>
+			<when state="Latin Small Letter O With Grave" output="ᶻ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷦ"/>
+		</action>
+		<action id="ø">
+			<when state="none" output="ø"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="đ">
+			<when state="none" output="đ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ł">
+			<when state="none" output="ł"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ŋ">
+			<when state="none" output="ŋ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵑ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="œ">
+			<when state="none" output="œ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ꟹ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ŧ">
+			<when state="none" output="ŧ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ƀ">
+			<when state="none" output="ƀ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ƚ">
+			<when state="none" output="ƚ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ƛ">
+			<when state="none" output="ƛ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ǥ">
+			<when state="none" output="ǥ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ɐ">
+			<when state="none" output="ɐ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵄ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ə">
+			<when state="none" output="ə"/>
+			<when state="Latin Small Letter A With Grave" output="ₔ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵊ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷪ"/>
+		</action>
+		<action id="ɦ">
+			<when state="none" output="ɦ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ʱ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ɱ">
+			<when state="none" output="ɱ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶬ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ɹ">
+			<when state="none" output="ɹ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ʴ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ʁ">
+			<when state="none" output="ʁ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ʶ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ʃ">
+			<when state="none" output="ʃ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶴ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷯ"/>
+		</action>
+		<action id="ʒ">
+			<when state="none" output="ʒ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶾ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ʔ">
+			<when state="none" output="ʔ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ˀ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="α">
+			<when state="none" output="α"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵅ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷧ"/>
+		</action>
+		<action id="β">
+			<when state="none" output="β"/>
+			<when state="Latin Small Letter A With Grave" output="ᵦ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵝ"/>
+			<when state="Latin Small Letter U With Grave" output="ᷩ"/>
+		</action>
+		<action id="γ">
+			<when state="none" output="γ"/>
+			<when state="Latin Small Letter A With Grave" output="ᵧ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵞ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="δ">
+			<when state="none" output="δ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵟ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ε">
+			<when state="none" output="ε"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵋ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ζ">
+			<when state="none" output="ζ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="η">
+			<when state="none" output="η"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="θ">
+			<when state="none" output="θ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶿ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ι">
+			<when state="none" output="ι"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶥ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="κ">
+			<when state="none" output="κ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="λ">
+			<when state="none" output="λ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="μ">
+			<when state="none" output="μ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ν">
+			<when state="none" output="ν"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ξ">
+			<when state="none" output="ξ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ο">
+			<when state="none" output="ο"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="π">
+			<when state="none" output="π"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ρ">
+			<when state="none" output="ρ"/>
+			<when state="Latin Small Letter A With Grave" output="ᵨ"/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ς">
+			<when state="none" output="ς"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="σ">
+			<when state="none" output="σ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="τ">
+			<when state="none" output="τ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="υ">
+			<when state="none" output="υ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᶷ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="φ">
+			<when state="none" output="φ"/>
+			<when state="Latin Small Letter A With Grave" output="ᵩ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵠ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="χ">
+			<when state="none" output="χ"/>
+			<when state="Latin Small Letter A With Grave" output="ᵪ"/>
+			<when state="Latin Small Letter O With Grave" output="ᵡ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ψ">
+			<when state="none" output="ψ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ω">
+			<when state="none" output="ω"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ᴉ">
+			<when state="none" output="ᴉ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ᵎ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ꞓ">
+			<when state="none" output="ꞓ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ꭋ">
+			<when state="none" output="ꭋ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="ꭒ">
+			<when state="none" output="ꭒ"/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output="ꭟ"/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+		<action id="">
+			<when state="none" output=""/>
+			<when state="Latin Small Letter A With Grave" output=""/>
+			<when state="Latin Small Letter O With Grave" output=""/>
+			<when state="Latin Small Letter U With Grave" output=""/>
+		</action>
+	</actions>
+	<terminators>
+		<when state="Latin Small Letter A With Grave" output="②"/>
+		<when state="Latin Small Letter O With Grave" output="①"/>
+		<when state="Latin Small Letter U With Grave" output="③"/>
+	</terminators>
+</keyboard>
+
