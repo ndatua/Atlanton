@@ -7,10 +7,9 @@ This package includes both the font files and a custom keyboard layout to facili
 ## Installation
 
 ### Step 1:
-1.  Download and extract the main **Atlanton** zip folder.
-2.  Open the **Font** folder.
-3.  Double-click on `Atlanton-Regular.ttf` and click **Install**.
-4.  Repeat the above step step for `Atlanton-Italic.ttf`.
+1.  Open the **Font** folder.
+2.  Double-click on `Atlanton-Regular.ttf` and click **Install**.
+3.  Repeat the above step for `Atlanton-Italic.ttf`.
 
 ### Step 2:
 
@@ -51,3 +50,4 @@ Three explanatory files are included:
 * **Documentation:** Licensed under CC BY 4.0.
 
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+
