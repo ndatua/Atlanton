@@ -22,10 +22,9 @@ This package includes both the font and a custom keyboard layout for writing tra
 
 **For Apple (macOS) Users**
 1.  Open the **Keyboard** folder.
-2.  Copy the file `Atlanton-Keyboard-Apple.keylayout` to one of the following folders:
-    * `/Library/Keyboard Layouts` (for all users)
-    * `~/Library/Keyboard Layouts` (for just yourself)
-          Tip: In order to access the hidden Library folder from Finder, hold down the option key while clicking on the Go menu.
+2.  Copy the file `Atlanton-Keyboard-Apple.keylayout` to one of the following folders. (Tip: In order to access the hidden Library folder from Finder, hold down the option key while clicking on the Go menu.)
+    * `/Library/Keyboard Layouts` - for all users
+    * `~/Library/Keyboard Layouts` - for just yourself
 3.  Open **System Settings** > **Keyboard**.
 4.  Under "Text Input" or "Input Sources," click **Edit** or the **+** button.
 5.  Scroll down to **Others**, select **Atlanton**, and click **Add**.
@@ -49,6 +48,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
