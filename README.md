@@ -1,8 +1,8 @@
 # Atlanton
 
-Atlanton is a custom typeface based on Gentium (v7.00), designed to support the classic phonetic alphabets of Romance dialectology. For further information on the subject, see [Datua & Miller 2025](https://www.academia.edu/146094379/Unicode_request_for_Romance_dialectology_symbols).
+Atlanton is a custom typeface based on Gentium and designed to support the classic phonetic alphabets of Romance dialectology. For further information on the subject, see [Datua & Miller 2025](https://www.academia.edu/146094379/Unicode_request_for_Romance_dialectology_symbols).
 
-This package includes both the font files and a custom keyboard layout to facilitate the process of writing transcriptions using the various new symbols.
+This package includes both the font files and a custom keyboard layout to facilitate the process of writing transcriptions using the new symbols.
 
 ## Installation
 
@@ -34,22 +34,21 @@ This package includes both the font files and a custom keyboard layout to facili
 
 Three explanatory files are included:
 
-* **Atlanton-Glyph-Index.pdf** (in the Font subfolder)
-    A visual summary of all the symbols added by the Atlanton font, plus their Unicode IDs.
+* **Atlanton-Glyph-Index.pdf** (in the Font subfolder): a spreadsheet of all the symbols added by Atlanton, along with their Unicode IDs.
 
-* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder)
-    An overview of the various keys and key-combinations of the keyboard layout.
+* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder): a detailed overview of the keyboard.
 
-* **AIS-Manual.pdf** (in the main Atlanton folder)
-    A guide, in Italian, to writing the phonetic alphabet of the *Atlante Italo-Svizzero* using Atlanton.
+* **AIS-Manual.pdf** (in the main folder): a guide, in Italian, to writing the phonetic alphabet of the *Atlante Italo-Svizzero* using Atlanton.
   
-## License
+## Licence
 
 * **Font Software:** Licensed under the SIL Open Font License (OFL), Version 1.1.
 * **Keyboard Layout:** Licensed under the MIT License.
 * **Documentation:** Licensed under CC BY 4.0.
 
+Copyright (c) 2026 Nicolas Datua
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+
 
 
 
