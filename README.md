@@ -17,7 +17,7 @@ This package includes both the font and a custom keyboard for writing transcript
 1.  Open the **Keyboard** folder.
 2.  Open and run the installer `Atlanton-Keyboard-Windows.exe`.
 3.  Follow the prompts to complete the installation.
-4.  Restart your computer to ensure that the changes take effect.
+4.  Restart the computer to ensure that the changes take effect.
 5.  Select "Atlanton" from the language bar (usually by pressing `Win` + `Space`).
 
 **For Apple (macOS) Users**
@@ -34,21 +34,21 @@ This package includes both the font and a custom keyboard for writing transcript
 
 Three explanatory files are included:
 
-* **Atlanton-Glyph-Index.pdf** (in the Font subfolder): a list of all the symbols added by Atlanton, plus their Unicode IDs.
+* **Atlanton-Glyph-Index.pdf** (in the Font subfolder): a list of all the symbols added by Atlanton, plus their Unicode IDs
 
-* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder): a detailed overview of the keyboard functionalities.
+* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder): a detailed overview of the keyboard functionalities
 
-* **AIS-Manual.pdf** (in the main folder): a guide, in Italian, to writing the phonetic alphabet of the *Atlante italo-svizzero* using Atlanton.
+* **AIS-Manual.pdf** (in the main folder): a guide, in Italian, to writing the phonetic alphabet of the *Atlante italo-svizzero* using Atlanton
   
 ## Licence
 
-* **Font Software:** Licensed under the SIL Open Font License (OFL), Version 1.1.
-* **Keyboard Layout:** Licensed under the MIT License.
-* **Documentation:** Licensed under CC BY 4.0.
+* **Font Software:** Licensed under the SIL Open Font License (OFL), Version 1.1
+* **Keyboard Layout:** Licensed under the MIT License
+* **Documentation:** Licensed under CC BY 4.0
 
 *Copyright (c) 2026 Nicolas Datua*
 
-*Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+*Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global*
 
 
 
