@@ -34,9 +34,9 @@ This package includes both the font and a custom keyboard for writing transcript
 
 Three explanatory files are included:
 
-* **Atlanton-Glyph-Index.pdf** (in the Font subfolder): a spreadsheet of all the symbols added by Atlanton, along with their Unicode IDs.
+* **Atlanton-Glyph-Index.pdf** (in the Font subfolder): a list of all the symbols added by Atlanton, plus their Unicode IDs.
 
-* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder): a detailed overview of the keyboard.
+* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder): a detailed overview of the keyboard functionalities.
 
 * **AIS-Manual.pdf** (in the main folder): a guide, in Italian, to writing the phonetic alphabet of the *Atlante Italo-Svizzero* using Atlanton.
   
@@ -48,6 +48,7 @@ Three explanatory files are included:
 
 Copyright (c) 2026 Nicolas Datua
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+
 
 
 
