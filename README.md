@@ -46,7 +46,8 @@ Three explanatory files are included:
 * **Keyboard Layout:** Licensed under the MIT License.
 * **Documentation:** Licensed under CC BY 4.0.
 
-Copyright (c) 2026 Nicolas Datua
+*Copyright (c) 2026 Nicolas Datua*
+
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
 
 
