@@ -25,10 +25,10 @@ This package includes both the font files and a custom keyboard layout to facili
 2.  Copy the file `Atlanton-Keyboard-Apple.keylayout` to one of the following folders:
     * `/Library/Keyboard Layouts` (for all users)
     * `~/Library/Keyboard Layouts` (for just yourself)
-3.  Tip: In order to access the hidden Library folder from Finder, hold down the option key while clicking on the Go menu.
-4.  Open **System Settings** > **Keyboard**.
-5.  Under "Text Input" or "Input Sources," click **Edit** or the **+** button.
-6.  Scroll down to **Others**, select **Atlanton**, and click **Add**.
+          Tip: In order to access the hidden Library folder from Finder, hold down the option key while clicking on the Go menu.
+3.  Open **System Settings** > **Keyboard**.
+4.  Under "Text Input" or "Input Sources," click **Edit** or the **+** button.
+5.  Scroll down to **Others**, select **Atlanton**, and click **Add**.
 
 ## Documentation
 
@@ -37,10 +37,10 @@ Three explanatory files are included:
 * **Atlanton-Glyph-Index.pdf** (in the Font subfolder)
     A visual summary of all the symbols added by the Atlanton font, plus their Unicode IDs.
 
-* **Atlanton-Layout-overview.svg** (in the Keyboard subfolder)
+* **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder)
     An overview of the various keys and key-combinations of the keyboard layout.
 
-* **AIS-manual.pdf** (in the main Atlanton folder)
+* **AIS-Manual.pdf** (in the main Atlanton folder)
     A guide, in Italian, to writing the phonetic alphabet of the *Atlante Italo-Svizzero* using Atlanton.
   
 ## License
@@ -50,6 +50,7 @@ Three explanatory files are included:
 * **Documentation:** Licensed under CC BY 4.0.
 
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global.*
+
 
 
 
