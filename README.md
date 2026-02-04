@@ -38,7 +38,7 @@ Three explanatory files are included:
 
 * **Atlanton-Layout-Overview.svg** (in the Keyboard subfolder): a detailed overview of the keyboard functionalities
 
-* **AIS-Manual.pdf** (in the main folder): a guide, in Italian, to writing the phonetic alphabet of the *Atlante italo-svizzero* using Atlanton
+* **AIS-Manual.pdf** (in the main folder): a guide, in Italian, to writing the phonetic alphabet of the AIS using Atlanton
   
 ## Licence
 
@@ -49,6 +49,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on Gentium 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
