@@ -28,13 +28,13 @@ Three explanatory files are included:
   
 ## Licence
 
-* **Font Software:** SIL Open Font License (OFL) v1.1
+* **Font:** SIL Open Font License (OFL) v1.1
 * **Typer:** MIT Licence
-* **Documentation:** Creative Commons 4.0
 
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
