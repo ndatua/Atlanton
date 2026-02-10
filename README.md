@@ -20,11 +20,11 @@ This package includes both the font and a custom typer to facilitate transcripti
 
 Three explanatory files are included:
 
-* **Atlanton-Glyph-Index.pdf** (in Font directory): a list of all the added characters in Atlanton and their Unicode IDs.
+* **Atlanton-Glyph-Index.pdf** (in Font directory): a list of all the added characters and their Unicode IDs.
 
-* **Atlanton-Typing-Manual.pdf** (in the Typer directory): a guide to writing transcriptions using the Atlanton font and typer.
+* **Atlanton-Typing-Manual.pdf** (in the Typer directory): a guide to using the Atlanton typer.
 
-* **Atlanton-Typing-Index** (in the Typer directory): a schematic overview of 'typing blocks'; see the typing manual for more.
+* **Atlanton-Typing-Index** (in the Typer directory): an overview of 'typing blocks'; see the manual for more.
   
 ## Licence
 
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
