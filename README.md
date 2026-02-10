@@ -1,6 +1,6 @@
 # Atlanton
 
-Atlanton is a custom typeface based on Gentium and intended for typing the the classic phonetic alphabets of Romance dialectology. For further information on the latter, see [Datua & Miller 2025](https://www.academia.edu/146094379/Unicode_request_for_Romance_dialectology_symbols).
+Atlanton is a custom typeface based on Gentium and intended for typing the the classic phonetic alphabets of Romance dialectology. For further information on said alphabets, see [Datua & Miller 2025](https://www.academia.edu/146094379/Unicode_request_for_Romance_dialectology_symbols).
 
 This package includes both the font and a customized input method to type all the new characters.
 
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
