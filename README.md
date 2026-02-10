@@ -20,7 +20,7 @@ This package includes both the font and a customized input method to type all th
 
 Three explanatory files are included:
 
-* **Atlanton-Glyph-Index.pdf** (in Font directory): a list of all the added characters and their Unicode IDs.
+* **Atlanton-Glyph-Index.pdf** (in the Font directory): a list of all the added characters and their Unicode IDs.
 
 * **Atlanton-Typing-Manual.pdf** (in the Typer directory): a brief guide to using the Atlanton typer.
 
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
