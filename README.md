@@ -24,7 +24,7 @@ Three explanatory files are included:
 
 * **Atlanton-Typing-Manual.pdf** (in the Typer directory): a brief guide to using the Atlanton typer.
 
-* **Atlanton-Typing-Index** (in the Typer directory): an overview of Atlanton 'typing blocks'; see the manual for more.
+* **Atlanton-Typing-Index** (in the Typer directory): the full list of Atlanton 'typing blocks'; see the typing manual for an explanation.
   
 ## Licencing
 
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
