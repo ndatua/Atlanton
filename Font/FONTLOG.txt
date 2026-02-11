@@ -48,8 +48,6 @@ Reserved Font Names and would have to be named something like "Grace Foo".
 
 ## ChangeLog
 
-(This should list both major and minor changes, most recent first.)
-
 ### 2 Feb 2026 Nicolas Datua (nicolasdatua@gmail.com) Atlanton version 1.00
 
 First public release of Atlanton, based on Gentium version 7.00.
