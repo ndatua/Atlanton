@@ -10,7 +10,7 @@ This package includes both the font and a custom typer to facilitate the typing 
 3.  Double-click the downloaded file and click **Install**.
 4.  Repeat steps 2–3 for `Atlanton-Italic.ttf`
 
-## Typer installation (Windows users only)
+## Typer installation (only for Windows users)
 
 1. Install [AutoHotkey v2](https://www.autohotkey.com/v2/) (see there for directions).
 2. Open the **Atlanton/Typer** directory.
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
