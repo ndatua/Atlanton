@@ -13,7 +13,7 @@ This package includes both the font and a customized input method to type all th
 ## Typer installation (Windows users only)
 
 1. Install [AutoHotkey v2](https://www.autohotkey.com/v2/) (see there for directions).
-2. Open the **Atlanton/Keyboard** directory.
+2. Open the **Atlanton/Typer** directory.
 3. Download `Atlanton-Typer.ahk` and store it somewhere.
 
 ## Documentation
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
