@@ -48,9 +48,9 @@ Reserved Font Names and would have to be named something like "Grace Foo".
 
 ## ChangeLog
 
-### 2 Feb 2026 Nicolas Datua (nicolasdatua@gmail.com) Atlanton version 1.00
+### 11 Feb 2026 Nicolas Datua (nicolasdatua@gmail.com) Atlanton v1.0
 
-First public release of Atlanton, based on Gentium version 7.00.
+First public release of Atlanton, based on Gentium v7.00
 
 #### New glyphs
 - Unicode additions:
@@ -64,7 +64,7 @@ First public release of Atlanton, based on Gentium version 7.00.
 
 #### Other changes
 - Removed combining dot above (0307) as a trigger of soft-dotting
-- Adjusted top anchors of latin small i and k (0365, U+006b)
+- Adjusted top anchors of latin small i and k (0365, 006b)
 - Adjusted precomposed k with acute (1E31) to match the adjusted anchor over k
 - Redrew the following glyphs:
     - 01E5 letter g with stroke (redrew non-italics version based on script ɡ instead of regular g)
