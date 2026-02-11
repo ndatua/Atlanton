@@ -22,7 +22,7 @@ Three explanatory files are included:
 
 * **Atlanton-Glyph-Index.pdf** (in the Font directory): a list of all the added characters and their Unicode IDs.
 
-* **Atlanton-Typing-Index** (in the Typer directory): the full list of Atlanton 'typing blocks'; see the typing manual for details.
+* **Atlanton-Typing-Index** (in the Typer directory): a list of Atlanton 'typing blocks'; see the typing manual for details.
 
 * **Atlanton-Typing-Manual.pdf** (in the Typer directory): a guide to writing transcriptions using Atlanton.
   
@@ -34,6 +34,7 @@ Three explanatory files are included:
 *Copyright (c) 2026 Nicolas Datua*
 
 *Font based on [Gentium](https://github.com/silnrsi/font-gentium) 7.00, Copyright (c) 2003-2026 SIL Global*
+
 
 
 
