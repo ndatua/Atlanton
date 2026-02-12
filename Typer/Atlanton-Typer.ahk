@@ -2,7 +2,7 @@
 #SingleInstance Force
 
 ; ==============================================================================
-; DATA: THE BLOCKS
+; BLOCKS
 ; ==============================================================================
 csvBlocks := "
 (
@@ -285,7 +285,6 @@ ProcessGrid(Layout) {
 ; ==============================================================================
 ; HOTKEYS
 ; ==============================================================================
-SetCapsLockState "AlwaysOff"
 
 ; Vertical: Naked Arrows
 $Up::   Navigate("U")
@@ -303,7 +302,7 @@ $Right::Navigate("R")
 :?*:o+e::{Text}œ
 
 ; ==============================================================================
-; NAVIGATION ENGINE
+; NAVIGATION
 ; ==============================================================================
 Navigate(Dir) {
     SavedClip := ClipboardAll()
@@ -408,3 +407,35 @@ CheckFusion() {
     
     A_Clipboard := SavedClip
 }
+
+; ==============================================================================
+; SMALLCAPS MODE (activated with capslock)
+; ==============================================================================
+#HotIf GetKeyState("CapsLock", "T")
+a::Send "{Text}ᴀ"
+b::Send "{Text}ʙ"
+c::Send "{Text}ᴄ"
+d::Send "{Text}ᴅ"
+e::Send "{Text}ᴇ"
+f::Send "{Text}ꜰ"
+g::Send "{Text}ɢ"
+h::Send "{Text}ʜ"
+i::Send "{Text}ɪ"
+j::Send "{Text}ᴊ"
+k::Send "{Text}ᴋ"
+l::Send "{Text}ʟ"
+m::Send "{Text}ᴍ"
+n::Send "{Text}ɴ"
+o::Send "{Text}ᴏ"
+p::Send "{Text}ᴘ"
+q::Send "{Text}ꞯ"
+r::Send "{Text}ʀ"
+s::Send "{Text}ꜱ"
+t::Send "{Text}ᴛ"
+u::Send "{Text}ᴜ"
+v::Send "{Text}ᴠ"
+w::Send "{Text}ᴡ"
+x::Send "{Text}x" ; No distinct Unicode exists for smallcap x
+y::Send "{Text}ʏ"
+z::Send "{Text}ᴢ"
+#HotIf ;
