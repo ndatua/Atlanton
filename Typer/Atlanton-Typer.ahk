@@ -215,7 +215,6 @@ FusionMap := Map()
 ; l + Combining Tilde (0303) -> ɫ (026B)
 FusionMap[Chr(0x006C) . Chr(0x0303)] := Chr(0x026B)
 
-; Parse the text
 CurrentGrid := []
 Loop Parse, csvBlocks, "`n", "`r" {
     Line := Trim(A_LoopField)
@@ -283,6 +282,38 @@ ProcessGrid(Layout) {
 }
 
 ; ==============================================================================
+; STATE TRACKING
+; ==============================================================================
+global GlobalTextBuffer := ""
+
+ih := InputHook("V")
+ih.OnChar := OnCharCallback
+ih.OnKeyDown := OnKeyDownCallback
+ih.KeyOpt("{Space}{Enter}{Tab}{Escape}{Backspace}{Delete}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}", "N")
+ih.Start()
+
+OnCharCallback(ih, char) {
+    global GlobalTextBuffer
+    GlobalTextBuffer .= char
+    
+    ; Keep memory short
+    if (StrLen(GlobalTextBuffer) > 5)
+        GlobalTextBuffer := SubStr(GlobalTextBuffer, -5) 
+}
+
+OnKeyDownCallback(ih, vk, sc) {
+    global GlobalTextBuffer
+    GlobalTextBuffer := ""
+}
+
+; Clear on mouse clicks to prevent teleport edits
+~LButton::
+~RButton::
+~MButton:: {
+    global GlobalTextBuffer := ""
+}
+
+; ==============================================================================
 ; HOTKEYS
 ; ==============================================================================
 
@@ -302,33 +333,20 @@ $Right::Navigate("R")
 :?*:o+e::{Text}œ
 
 ; ==============================================================================
-; NAVIGATION
+; NAVIGATION & FUSION
 ; ==============================================================================
 Navigate(Dir) {
-    SavedClip := ClipboardAll()
-    A_Clipboard := "" 
+    global GlobalTextBuffer
     
-    Send("+{Left}^c")
-    if !ClipWait(0.1) {
-        DoStandard(Dir)
-        A_Clipboard := SavedClip
-        return
-    }
-    
-    Full := A_Clipboard
-    if (Full == "") {
-        DoStandard(Dir)
-        A_Clipboard := SavedClip
+    if (GlobalTextBuffer = "") {
         return
     }
 
-    Tail := SubStr(Full, -1)
-    if (Ord(Tail) >= 0xDC00 && Ord(Tail) <= 0xDFFF) {
-        LastChar := SubStr(Full, -2)
-        Stem     := SubStr(Full, 1, StrLen(Full)-2)
+    Tail := SubStr(GlobalTextBuffer, -1)
+    if (Ord(Tail) >= 0xDC00 && Ord(Tail) <= 0xDFFF && StrLen(GlobalTextBuffer) >= 2) {
+        LastChar := SubStr(GlobalTextBuffer, -2)
     } else {
         LastChar := Tail
-        Stem     := SubStr(Full, 1, StrLen(Full)-1)
     }
 
     if (GridMap.Has(LastChar)) {
@@ -342,74 +360,44 @@ Navigate(Dir) {
         else if (Dir = "R") 
             Target := GridMap[LastChar].R
             
-        if (Target != "") {
-            Send("{Text}" . Stem . Target)
-            CheckFusion()
-        } else {
-            Send("{Right}") 
+if (Target != "") {
+            ; Delete the old character
+            Send("{Backspace}")
+                
+            ; Put the new character
+            Send("{Text}" . Target)
+            
+            ; Update memory buffer
+            GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - StrLen(LastChar)) . Target
+            
+            CheckFusionState()
         }
     } else {
-        Send("{Right}") 
-        DoStandard(Dir)
+        ; Not a transformable character- clear the buffer.
+        GlobalTextBuffer := "" 
     }
-    
-    A_Clipboard := SavedClip
 }
 
-DoStandard(Dir) {
-    if (Dir = "U") 
-        Send("{Up}")
-    else if (Dir = "D") 
-        Send("{Down}")
-    else if (Dir = "L") 
-        Send("{Left}")
-    else if (Dir = "R") 
-        Send("{Right}")
-}
-
-CheckFusion() {
-    SavedClip := ClipboardAll()
-    A_Clipboard := ""
+CheckFusionState() {
+    global GlobalTextBuffer
     
-    Send("+{Left}^c")
-    if !ClipWait(0.05) {
-        Send("{Right}") 
-        A_Clipboard := SavedClip
+    if (StrLen(GlobalTextBuffer) < 2)
         return
-    }
-    
-    CurrentSelect := A_Clipboard
-    TargetSequence := Chr(0x006C) . Chr(0x0303) ; l + ~
-    
-    if (CurrentSelect = TargetSequence) {
-        Send("{Text}" . Chr(0x026B))
-    } 
-    else if (CurrentSelect = Chr(0x0303)) {
-        ; Partial match. We need to grab one more char left.
-        Send("+{Left}^c")
-        if !ClipWait(0.05) {
-            Send("{Right}") 
-            A_Clipboard := SavedClip
-            return
-        }
         
-        CurrentSelect := A_Clipboard
-        if (CurrentSelect = TargetSequence) {
-            Send("{Text}" . Chr(0x026B))
-        } else {
-            Send("{Right}") ; Not a match, revert cursor
-        }
-    } 
-    else {
-        ; No match (or something else selected), put cursor back
-        Send("{Right}")
-    }
+    ; Check the last two characters
+    LastTwo := SubStr(GlobalTextBuffer, -2)
     
-    A_Clipboard := SavedClip
+    if (FusionMap.Has(LastTwo)) {
+        FusionChar := FusionMap[LastTwo]
+        
+        Send("{Backspace 2}")
+        Send("{Text}" . FusionChar)
+        GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - 2) . FusionChar
+    }
 }
 
 ; ==============================================================================
-; SMALLCAPS MODE (activated with capslock)
+; SMALLCAPS
 ; ==============================================================================
 #HotIf GetKeyState("CapsLock", "T")
 a::Send "{Text}ᴀ"
@@ -435,7 +423,7 @@ t::Send "{Text}ᴛ"
 u::Send "{Text}ᴜ"
 v::Send "{Text}ᴠ"
 w::Send "{Text}ᴡ"
-x::Send "{Text}x" ; No distinct Unicode exists for smallcap x
+x::Send "{Text}x" ; There is no smallcap x in Unicode
 y::Send "{Text}ʏ"
 z::Send "{Text}ᴢ"
 #HotIf ;
