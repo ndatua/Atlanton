@@ -306,7 +306,7 @@ OnKeyDownCallback(ih, vk, sc) {
     GlobalTextBuffer := ""
 }
 
-; Clear on mouse clicks to prevent teleport edits
+; Clear on mouse clicks to prevent teleport editing
 ~LButton::
 ~RButton::
 ~MButton:: {
