@@ -330,7 +330,13 @@ $Right::Navigate("R")
 !Down:: Send("{Down}")
 
 ; LIGATURE: o + e -> œ
-:?*:o+e::{Text}œ
+:?*:o+e:: {
+    global GlobalTextBuffer
+    Send("{Text}œ")
+    
+    ; append œ into the buffer so the navigation functions recognize it
+    GlobalTextBuffer .= "œ" 
+}
 
 ; ==============================================================================
 ; NAVIGATION & FUSION
