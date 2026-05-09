@@ -286,7 +286,7 @@ ProcessGrid(Layout) {
 ; ==============================================================================
 global GlobalTextBuffer := ""
 
-ih := InputHook("V")
+ih := InputHook("V L0")
 ih.OnChar := OnCharCallback
 ih.OnKeyDown := OnKeyDownCallback
 ih.KeyOpt("{Space}{Enter}{Tab}{Escape}{Backspace}{Delete}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}", "N")
