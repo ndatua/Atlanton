@@ -206,29 +206,107 @@ VOID,VOID,VOID,VOID,VOID,1AB8,VOID,VOID,VOID,035C
 )"
 
 ; ==============================================================================
-; INITIALIZATION
+; SHADOW BLOCKS
+; ==============================================================================
+csvShadowBlocks := "
+(
+VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
+VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
+VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
+VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
+1AC8,0304,0303,0307,030A,0313,030D,VOID,030C,0311
+VOID,1AE8,VOID,0308,VOID,E181,VOID,VOID,VOID,0306
+VOID,VOID,VOID,VOID,VOID,E182,VOID,VOID,VOID,VOID
+)"
+
+; ==============================================================================
+; INITIALIZATION & MAPS
 ; ==============================================================================
 GridMap := Map() 
+ShadowGridMap := Map()
 FusionMap := Map()
 
 ; --- DEFINE FUSION RULES ---
-; l + Combining Tilde (0303) -> ɫ (026B)
 FusionMap[Chr(0x006C) . Chr(0x0303)] := Chr(0x026B)
 
+; --- SHADOW ENTRY MAP ---
+global ShadowEntryMap := Map(
+    Chr(0x031F), Chr(0x1AC8),
+    Chr(0x0331), Chr(0x0304),
+    Chr(0x0330), Chr(0x0303),
+    Chr(0x0323), Chr(0x0307),
+    Chr(0x0325), Chr(0x030A),
+    Chr(0x0326), Chr(0x0313),
+    Chr(0x0329), Chr(0x030D),
+    Chr(0x032C), Chr(0x030C),
+    Chr(0x032F), Chr(0x0311),
+    Chr(0x0347), Chr(0x1AE8),
+    Chr(0x0324), Chr(0x0308),
+    Chr(0x1AB7), Chr(0xE181),
+    Chr(0x032E), Chr(0x0306),
+    Chr(0x1AB8), Chr(0xE182)
+)
+
+; --- CEDILLA BASES ---
+global CedillaBases := Map(
+    Chr(0x0043), true,  ; capital c (just for spelling French words)
+    Chr(0x0063), true,  ; baseline c
+    Chr(0x1D9C), true,  ; superscript c
+    Chr(0x0368), true,  ; combining c
+    Chr(0xE304), true,   ; subscript c
+    Chr(0xA793), true,  ; baseline ꞓ
+    Chr(0xE201), true,  ; superscript ꞓ
+    Chr(0xE103), true,   ; combining ꞓ
+    Chr(0xE305), true   ; subscript ꞓ
+)
+
+; --- COMBINING LETTERS ABOVE ---
+global CombiningLettersAbove := Map(
+    Chr(0x1DE7), true, Chr(0x0363), true, Chr(0xE100), true,
+    Chr(0x1DE9), true, Chr(0x1DE8), true, Chr(0xE101), true, Chr(0xE102), true,
+    Chr(0x0368), true, Chr(0xE103), true,
+    Chr(0xE141), true, Chr(0x0369), true, Chr(0xE104), true, Chr(0xE105), true,
+    Chr(0xE142), true, Chr(0x0364), true, Chr(0x1DEA), true,
+    Chr(0xE154), true, Chr(0x1DEB), true,
+    Chr(0xE140), true, Chr(0x1DDA), true, Chr(0xE106), true, Chr(0xE107), true,
+    Chr(0xE144), true, Chr(0x036A), true, Chr(0xE108), true,
+    Chr(0xE146), true, Chr(0x0365), true, Chr(0xE109), true,
+    Chr(0xE10A), true,
+    Chr(0xE14C), true, Chr(0xE147), true, Chr(0x1DDC), true,
+    Chr(0xE149), true, Chr(0xE148), true, Chr(0x1DDD), true, Chr(0xE10D), true, Chr(0xE10E), true, Chr(0xE10F), true,
+    Chr(0xE10C), true, Chr(0xE10B), true,
+    Chr(0xE14A), true, Chr(0x036B), true, Chr(0xE110), true,
+    Chr(0xE14B), true, Chr(0x1DE0), true, Chr(0xE111), true, Chr(0xE112), true,
+    Chr(0xE14D), true, Chr(0xE158), true, Chr(0x0366), true, Chr(0xE114), true, Chr(0xE113), true,
+    Chr(0xE115), true,
+    Chr(0xE157), true, Chr(0xE14E), true, Chr(0x1DEE), true,
+    Chr(0xE116), true,
+    Chr(0xE14F), true, Chr(0x036C), true, Chr(0xE117), true, Chr(0xE118), true, Chr(0xE119), true, Chr(0xE11A), true,
+    Chr(0xE150), true, Chr(0xE151), true, Chr(0x1DE4), true, Chr(0x1DEF), true,
+    Chr(0xE145), true, Chr(0xE152), true, Chr(0x036D), true, Chr(0xE11B), true,
+    Chr(0xE153), true, Chr(0x0367), true, Chr(0xE11D), true, Chr(0xE11C), true,
+    Chr(0x036E), true,
+    Chr(0x1DF1), true,
+    Chr(0xE156), true, Chr(0xE155), true, Chr(0x036F), true,
+    Chr(0xE11E), true,
+    Chr(0xE143), true, Chr(0x1DE6), true, Chr(0xE11F), true,
+    Chr(0xE120), true
+)
+
+; ==============================================================================
+; PROCESSORS
+; ==============================================================================
+; Parse Standard Grid
 CurrentGrid := []
 Loop Parse, csvBlocks, "`n", "`r" {
     Line := Trim(A_LoopField)
-    if (SubStr(Line, 1, 1) = ";")
-        continue
-
-    if (Line = "") {
+    if (SubStr(Line, 1, 1) = ";" || Line = "") {
         if (CurrentGrid.Length > 0) {
-            ProcessGrid(CurrentGrid)
+            ProcessGrid(CurrentGrid, GridMap)
             CurrentGrid := []
         }
         continue
     }
-    
     RowItems := []
     Loop Parse, Line, "," {
         CleanHex := Trim(A_LoopField)
@@ -242,17 +320,43 @@ Loop Parse, csvBlocks, "`n", "`r" {
             RowItems.Push("")
         }
     }
-    
     if (RowItems.Length > 0)
         CurrentGrid.Push(RowItems)
 }
 if (CurrentGrid.Length > 0)
-    ProcessGrid(CurrentGrid)
+    ProcessGrid(CurrentGrid, GridMap)
 
-; ==============================================================================
-; PROCESSOR
-; ==============================================================================
-ProcessGrid(Layout) {
+; Parse Shadow Grid
+CurrentShadowGrid := []
+Loop Parse, csvShadowBlocks, "`n", "`r" {
+    Line := Trim(A_LoopField)
+    if (SubStr(Line, 1, 1) = ";" || Line = "") {
+        if (CurrentShadowGrid.Length > 0) {
+            ProcessGrid(CurrentShadowGrid, ShadowGridMap)
+            CurrentShadowGrid := []
+        }
+        continue
+    }
+    RowItems := []
+    Loop Parse, Line, "," {
+        CleanHex := Trim(A_LoopField)
+        if (CleanHex != "" && CleanHex != "VOID") {
+            try {
+                RowItems.Push(Chr("0x" . CleanHex))
+            } catch {
+                RowItems.Push("") 
+            }
+        } else {
+            RowItems.Push("")
+        }
+    }
+    if (RowItems.Length > 0)
+        CurrentShadowGrid.Push(RowItems)
+}
+if (CurrentShadowGrid.Length > 0)
+    ProcessGrid(CurrentShadowGrid, ShadowGridMap)
+
+ProcessGrid(Layout, TargetMap) {
     MaxRows := Layout.Length
     Loop MaxRows {
         r := A_Index
@@ -262,21 +366,20 @@ ProcessGrid(Layout) {
         Loop MaxCols {
             c := A_Index
             Char := Row[c]
-            
             if (Char = "")
                 continue
                 
-            if (!GridMap.Has(Char))
-                GridMap[Char] := {U: "", D: "", L: "", R: ""}
+            if (!TargetMap.Has(Char))
+                TargetMap[Char] := {U: "", D: "", L: "", R: ""}
             
             if (r > 1 && c <= Layout[r-1].Length && Layout[r-1][c] != "")
-                GridMap[Char].U := Layout[r-1][c]
+                TargetMap[Char].U := Layout[r-1][c]
             if (r < MaxRows && c <= Layout[r+1].Length && Layout[r+1][c] != "")
-                GridMap[Char].D := Layout[r+1][c]
+                TargetMap[Char].D := Layout[r+1][c]
             if (c > 1 && Layout[r][c-1] != "")
-                GridMap[Char].L := Layout[r][c-1]
+                TargetMap[Char].L := Layout[r][c-1]
             if (c < MaxCols && Layout[r][c+1] != "")
-                GridMap[Char].R := Layout[r][c+1]
+                TargetMap[Char].R := Layout[r][c+1]
         }
     }
 }
@@ -295,8 +398,6 @@ ih.Start()
 OnCharCallback(ih, char) {
     global GlobalTextBuffer
     GlobalTextBuffer .= char
-    
-    ; Keep memory short
     if (StrLen(GlobalTextBuffer) > 5)
         GlobalTextBuffer := SubStr(GlobalTextBuffer, -5) 
 }
@@ -306,7 +407,6 @@ OnKeyDownCallback(ih, vk, sc) {
     GlobalTextBuffer := ""
 }
 
-; Clear on mouse clicks to prevent teleport editing
 ~LButton::
 ~RButton::
 ~MButton:: {
@@ -316,70 +416,114 @@ OnKeyDownCallback(ih, vk, sc) {
 ; ==============================================================================
 ; HOTKEYS
 ; ==============================================================================
-
-; Vertical: Naked Arrows
 $Up::   Navigate("U")
 $Down:: Navigate("D")
 $Left:: Navigate("L")
 $Right::Navigate("R")
 
-; Horizontal: Alt + Arrows
 !Left:: Send("{Left}")
 !Right::Send("{Right}")
 !Up::   Send("{Up}")
 !Down:: Send("{Down}")
 
-; LIGATURE: o + e -> œ
 :?*:o+e:: {
     global GlobalTextBuffer
     Send("{Text}œ")
-    
-    ; append œ into the buffer so the navigation functions recognize it
     GlobalTextBuffer .= "œ" 
 }
 
 ; ==============================================================================
-; NAVIGATION & FUSION
+; NAVIGATION, SHADOW GRID, & FUSION
 ; ==============================================================================
 Navigate(Dir) {
     global GlobalTextBuffer
     
-    if (GlobalTextBuffer = "") {
+    if (GlobalTextBuffer = "")
         return
-    }
 
-    Tail := SubStr(GlobalTextBuffer, -1)
-    if (Ord(Tail) >= 0xDC00 && Ord(Tail) <= 0xDFFF && StrLen(GlobalTextBuffer) >= 2) {
+    BufferLen := StrLen(GlobalTextBuffer)
+    LastChar := SubStr(GlobalTextBuffer, -1)
+    
+    ; Surrogate pair check
+    if (Ord(LastChar) >= 0xDC00 && Ord(LastChar) <= 0xDFFF && BufferLen >= 2) {
         LastChar := SubStr(GlobalTextBuffer, -2)
-    } else {
-        LastChar := Tail
     }
 
+    PrevChar := ""
+    if (BufferLen >= StrLen(LastChar) + 1) {
+        PrevChar := SubStr(GlobalTextBuffer, -(StrLen(LastChar) + 1), 1)
+    }
+
+    ; --- STATE 1: TRAVERSING THE SHADOW GRID ---
+    ; User is already moving around within the Shadow Grid
+    if (CombiningLettersAbove.Has(LastChar) && ShadowGridMap.Has(PrevChar)) {
+        Target := ""
+        if (Dir = "U") {
+            Target := ShadowGridMap[PrevChar].U
+        } else if (Dir = "D") {
+            Target := ShadowGridMap[PrevChar].D
+        } else if (Dir = "L") {
+            Target := ShadowGridMap[PrevChar].L
+        } else if (Dir = "R") {
+            Target := ShadowGridMap[PrevChar].R
+        }
+
+        if (Target != "") {
+            Send("{Backspace 2}")
+            Send("{Text}" . Target . LastChar)
+            GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, BufferLen - StrLen(LastChar) - StrLen(PrevChar)) . Target . LastChar
+            CheckCedillaSwap()
+        }
+        return ; Ends here to prevent falling into standard navigation
+    }
+
+    ; --- STATE 2: ENTERING SHADOW GRID ---
+    ; User has hit a trigger (like '.') directly after a combining letter
+    if (CombiningLettersAbove.Has(PrevChar) && GridMap.Has(LastChar)) {
+        StandardTarget := ""
+        if (Dir = "U") {
+            StandardTarget := GridMap[LastChar].U
+        } else if (Dir = "D") {
+            StandardTarget := GridMap[LastChar].D
+        } else if (Dir = "L") {
+            StandardTarget := GridMap[LastChar].L
+        } else if (Dir = "R") {
+            StandardTarget := GridMap[LastChar].R
+        }
+
+        if (StandardTarget != "" && ShadowEntryMap.Has(StandardTarget)) {
+            ShadowTarget := ShadowEntryMap[StandardTarget]
+            
+            Send("{Backspace 2}")
+            Send("{Text}" . ShadowTarget . PrevChar)
+            GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, BufferLen - StrLen(LastChar) - StrLen(PrevChar)) . ShadowTarget . PrevChar
+            CheckCedillaSwap()
+            return
+        }
+    }
+
+    ; --- STATE 3: STANDARD NAVIGATION ---
     if (GridMap.Has(LastChar)) {
         Target := ""
-        if (Dir = "U")      
+        if (Dir = "U") {
             Target := GridMap[LastChar].U
-        else if (Dir = "D") 
+        } else if (Dir = "D") {
             Target := GridMap[LastChar].D
-        else if (Dir = "L") 
+        } else if (Dir = "L") {
             Target := GridMap[LastChar].L
-        else if (Dir = "R") 
+        } else if (Dir = "R") {
             Target := GridMap[LastChar].R
+        }
             
-if (Target != "") {
-            ; Delete the old character
+        if (Target != "") {
             Send("{Backspace}")
-                
-            ; Put the new character
             Send("{Text}" . Target)
-            
-            ; Update memory buffer
-            GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - StrLen(LastChar)) . Target
+            GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, BufferLen - StrLen(LastChar)) . Target
             
             CheckFusionState()
+            CheckCedillaSwap()
         }
     } else {
-        ; Not a transformable character- clear the buffer.
         GlobalTextBuffer := "" 
     }
 }
@@ -390,15 +534,41 @@ CheckFusionState() {
     if (StrLen(GlobalTextBuffer) < 2)
         return
         
-    ; Check the last two characters
     LastTwo := SubStr(GlobalTextBuffer, -2)
     
     if (FusionMap.Has(LastTwo)) {
         FusionChar := FusionMap[LastTwo]
-        
         Send("{Backspace 2}")
         Send("{Text}" . FusionChar)
         GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - 2) . FusionChar
+    }
+}
+
+CheckCedillaSwap() {
+    global GlobalTextBuffer
+    
+    if (StrLen(GlobalTextBuffer) < 2)
+        return
+        
+    LastChar := SubStr(GlobalTextBuffer, -1)
+    PrevChar := SubStr(GlobalTextBuffer, -2, 1)
+    
+    ; 1. Standard cedilla check
+    if (CedillaBases.Has(PrevChar) && LastChar = Chr(0x0326)) {
+        Cedilla := Chr(0x0327)
+        Send("{Backspace}")
+        Send("{Text}" . Cedilla)
+        GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - 1) . Cedilla
+        return
+    }
+
+    ; 2. Shadow cedilla check (combining c + shadow Comma)
+    ; In the shadow grid, buffer is [shadow comma above] + [combining c]
+    if (CedillaBases.Has(LastChar) && PrevChar = Chr(0x0313)) {
+        ShadowCedilla := Chr(0xE183)
+        Send("{Backspace 2}")
+        Send("{Text}" . ShadowCedilla . LastChar)
+        GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - 2) . ShadowCedilla . LastChar
     }
 }
 
@@ -429,7 +599,7 @@ t::Send "{Text}ᴛ"
 u::Send "{Text}ᴜ"
 v::Send "{Text}ᴠ"
 w::Send "{Text}ᴡ"
-x::Send "{Text}x" ; There is no smallcap x in Unicode
+x::Send "{Text}x"
 y::Send "{Text}ʏ"
 z::Send "{Text}ᴢ"
-#HotIf ;
+#HotIf
