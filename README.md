@@ -5,7 +5,7 @@ Atlanton is a modified font designed to support the classic phonetic alphabets o
 This package includes both the font and a custom typer to facilitate the typing of transcriptions.
 
 ## Font installation
-1.  Download [Atlanton-Regular.ttf](https://github.com/ndatua/Atlanton/blob/main/Font/Atlanton-Italic.ttf)
+1.  Download [Atlanton-Regular.ttf](https://github.com/ndatua/Atlanton/blob/main/Font/Atlanton-Regular.ttf)
 2.  Double-click the downloaded file and click **Install**.
 3.  Repeat steps 1–2 for [Atlanton-Italic.ttf](https://github.com/ndatua/Atlanton/blob/main/Font/Atlanton-Italic.ttf)
 
