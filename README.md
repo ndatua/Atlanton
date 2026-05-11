@@ -20,7 +20,7 @@ Three explanatory files are included:
 
 * **[Atlanton-Typing-Manual](https://github.com/ndatua/Atlanton/blob/main/Typer/Atlanton-Typing-Manual.pdf)**: a guide to using Atlanton to write phonetic transcriptions.
 
-* **[Atlanton-Typing-Index](https://github.com/ndatua/Atlanton/blob/main/Typer/Atlanton-Typing-Index.pdf)** (in the Typer directory): list of Atlanton 'typing blocks'; see the typing manual for details.
+* **[Atlanton-Typing-Index](https://github.com/ndatua/Atlanton/blob/main/Typer/Atlanton-Typing-Index.pdf)**: list of Atlanton 'typing blocks'; see the typing manual for details.
 
 * **[Atlanton-Glyph-Index](https://github.com/ndatua/Atlanton/blob/main/Font/Atlanton-Glyph-Index.pdf)**: a list of all added characters and their Unicode IDs.
   
