@@ -20,11 +20,11 @@ This package includes both the font and a custom typer to facilitate the typing 
 
 Three explanatory files are included:
 
-* **Atlanton-Glyph-Index.pdf** (in the Font directory): list of all added characters and their Unicode IDs.
+* **Atlanton-Glyph-Index** (in the Font directory): list of all added characters and their Unicode IDs.
 
-* **Atlanton-Typing-Index.pdf** (in the Typer directory): list of Atlanton 'typing blocks'; see typing manual for details.
+* **Atlanton-Typing-Index** (in the Typer directory): list of Atlanton 'typing blocks'; see typing manual for details.
 
-* **Atlanton-Typing-Manual.pdf** (in the Typer directory): guide to writing transcriptions using Atlanton.
+* **Atlanton-Typing-Manual** (in the Typer directory): guide to writing transcriptions using Atlanton.
   
 ## Licencing
 
