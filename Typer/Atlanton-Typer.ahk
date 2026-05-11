@@ -214,8 +214,8 @@ VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
 VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
 VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
 VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID,VOID
-1AC8,0304,0303,0307,030A,0313,030D,VOID,030C,0311
-VOID,1AE8,VOID,0308,VOID,E181,VOID,VOID,VOID,0306
+E18D,E189,E18C,E185,E18E,E184,E18F,VOID,E18B,E187
+VOID,E18A,VOID,E186,VOID,E181,VOID,VOID,VOID,E188
 VOID,VOID,VOID,VOID,VOID,E182,VOID,VOID,VOID,VOID
 )"
 
@@ -231,19 +231,19 @@ FusionMap[Chr(0x006C) . Chr(0x0303)] := Chr(0x026B)
 
 ; --- SHADOW ENTRY MAP ---
 global ShadowEntryMap := Map(
-    Chr(0x031F), Chr(0x1AC8),
-    Chr(0x0331), Chr(0x0304),
-    Chr(0x0330), Chr(0x0303),
-    Chr(0x0323), Chr(0x0307),
-    Chr(0x0325), Chr(0x030A),
-    Chr(0x0326), Chr(0x0313),
-    Chr(0x0329), Chr(0x030D),
-    Chr(0x032C), Chr(0x030C),
-    Chr(0x032F), Chr(0x0311),
-    Chr(0x0347), Chr(0x1AE8),
-    Chr(0x0324), Chr(0x0308),
+    Chr(0x031F), Chr(0xE18D),
+    Chr(0x0331), Chr(0xE189),
+    Chr(0x0330), Chr(0xE18C),
+    Chr(0x0323), Chr(0xE185),
+    Chr(0x0325), Chr(0xE18E),
+    Chr(0x0326), Chr(0xE184),
+    Chr(0x0329), Chr(0xE18F),
+    Chr(0x032C), Chr(0xE18B),
+    Chr(0x032F), Chr(0xE187),
+    Chr(0x0347), Chr(0xE18A),
+    Chr(0x0324), Chr(0xE186),
     Chr(0x1AB7), Chr(0xE181),
-    Chr(0x032E), Chr(0x0306),
+    Chr(0x032E), Chr(0xE188),
     Chr(0x1AB8), Chr(0xE182)
 )
 
@@ -326,7 +326,7 @@ Loop Parse, csvBlocks, "`n", "`r" {
 if (CurrentGrid.Length > 0)
     ProcessGrid(CurrentGrid, GridMap)
 
-; Parse Shadow Grid
+; Parse shadow grid
 CurrentShadowGrid := []
 Loop Parse, csvShadowBlocks, "`n", "`r" {
     Line := Trim(A_LoopField)
@@ -433,7 +433,7 @@ $Right::Navigate("R")
 }
 
 ; ==============================================================================
-; NAVIGATION, SHADOW GRID, & FUSION
+; NAVIGATION, SHADOW GRID, FUSION
 ; ==============================================================================
 Navigate(Dir) {
     global GlobalTextBuffer
@@ -562,13 +562,15 @@ CheckCedillaSwap() {
         return
     }
 
-    ; 2. Shadow cedilla check (combining c + shadow Comma)
+    ; 2. Shadow cedilla check (combining c + shadow comma)
     ; In the shadow grid, buffer is [shadow comma above] + [combining c]
-    if (CedillaBases.Has(LastChar) && PrevChar = Chr(0x0313)) {
+    if (CedillaBases.Has(LastChar) && PrevChar = Chr(0xE184)) {
         ShadowCedilla := Chr(0xE183)
         Send("{Backspace 2}")
         Send("{Text}" . ShadowCedilla . LastChar)
-        GlobalTextBuffer := SubStr(GlobalTextBuffer, 1, StrLen(GlobalTextBuffer) - 2) . ShadowCedilla . LastChar
+        
+        ; Clear the board to prevent stranded 'c'
+        GlobalTextBuffer := "" 
     }
 }
 
