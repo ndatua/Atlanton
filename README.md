@@ -4,6 +4,8 @@ Atlanton is a modified font designed to support the classic phonetic alphabets o
 
 This package includes both the font and a custom typer to facilitate the typing of transcriptions.
 
+The font and the typer can be tested at [this](https://ndatua.github.io/Atlanton/Web/) page without installing anything.
+
 ## Font installation
 1.  Download [Atlanton-Regular.ttf](https://github.com/ndatua/Atlanton/blob/main/Font/Atlanton-Regular.ttf)
 2.  Double-click the downloaded file and click **Install**.
