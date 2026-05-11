@@ -271,7 +271,7 @@ VOID,VOID,VOID,VOID,VOID,1AB8,VOID,VOID,VOID,035C
                 const row = [];
 
                 hexCodes.forEach((hex, colIndex) => {
-                    if (hex === '') {
+                    if (hex === '' || hex === 'VOID') {
                         row.push(null);
                         return;
                     }
@@ -296,6 +296,52 @@ VOID,VOID,VOID,VOID,VOID,1AB8,VOID,VOID,VOID,035C
     }
 
     const { blocks, charMap } = buildCharacterMaps(csvBlocks);
+
+    const typerBox = document.getElementById('typer-box');
+
+    typerBox.addEventListener('keydown', function(event) {
+        const arrowKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
+        
+        if (!arrowKeys.includes(event.key)) return;
+
+        const cursorPosition = this.selectionStart;
+        if (cursorPosition === 0) return;
+
+        const textBeforeCursor = this.value.substring(0, cursorPosition);
+        const textAfterCursor = this.value.substring(this.selectionEnd);
+
+        const charsBeforeCursor = Array.from(textBeforeCursor);
+        const lastChar = charsBeforeCursor[charsBeforeCursor.length - 1];
+
+        const charInfo = charMap.get(lastChar);
+        
+        if (charInfo) {
+
+            event.preventDefault();
+
+            let { blockIndex, row, col } = charInfo;
+            const grid = blocks[blockIndex];
+
+            if (event.key === 'ArrowUp') row--;
+            else if (event.key === 'ArrowDown') row++;
+            else if (event.key === 'ArrowLeft') col--;
+            else if (event.key === 'ArrowRight') col++;
+
+            if (row >= 0 && row < grid.length && col >= 0 && col < grid[row].length) {
+                const newChar = grid[row][col];
+                
+                if (newChar !== null) {
+                    
+                    charsBeforeCursor[charsBeforeCursor.length - 1] = newChar;
+                    const newTextBeforeCursor = charsBeforeCursor.join('');
+                    
+                    this.value = newTextBeforeCursor + textAfterCursor;
+                    
+                    this.selectionStart = this.selectionEnd = newTextBeforeCursor.length;
+                }
+            }
+        }
+    });
 </script>
 </body>
 </html>
